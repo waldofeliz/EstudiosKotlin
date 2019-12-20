@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ViewModelApp</string>
+    <string name="strMainActivityTitleSumar">View Model Sumar Activity</string>
+    <string name="strMainActivityTitleUser">View Model User Activity</string>
 </resources>
