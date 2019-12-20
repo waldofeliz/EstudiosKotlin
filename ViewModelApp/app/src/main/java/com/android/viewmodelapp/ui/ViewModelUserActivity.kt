@@ -20,7 +20,6 @@ class ViewModelUserActivity : AppCompatActivity() {
     lateinit var tvUserViewModel : TextView
 
     lateinit var userList : ArrayList<User>
-    lateinit var userViewModel : UserViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,7 +27,7 @@ class ViewModelUserActivity : AppCompatActivity() {
         configView()
     }
     fun configView(){
-        userViewModel = ViewModelProviders.of(this)[UserViewModel::class.java]
+        var userViewModel = ViewModelProviders.of(this)[UserViewModel::class.java]
         userList = ArrayList<User>()
 
         tvUser = findViewById(R.id.userActivityTvUser)

@@ -16,8 +16,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btViewModelActivitySumar = findViewById(R.id.viewModelSumarActivityBtSumar)
-        btViewModelActivityUser = findViewById(R.id.viewModelUserActivityBtSumar)
+        btViewModelActivitySumar = findViewById(R.id.viewModelActivityBtSumar)
+        btViewModelActivityUser = findViewById(R.id.viewModelActivityBtUser)
 
         btViewModelActivitySumar.setOnClickListener{view ->
             val intent = Intent(this, ViewModelActivity::class.java)
