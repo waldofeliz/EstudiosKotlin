@@ -9,8 +9,9 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var btViewModelActivitySumar :Button
-    lateinit var btViewModelActivityUser :Button
+    private lateinit var btViewModelActivitySumar :Button
+    private lateinit var btViewModelActivityUser :Button
+    private lateinit var btViewModelActivityLiveData : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         btViewModelActivitySumar = findViewById(R.id.viewModelActivityBtSumar)
         btViewModelActivityUser = findViewById(R.id.viewModelActivityBtUser)
+        btViewModelActivityLiveData = findViewById(R.id.viewModelActivityBtLiveData)
 
         btViewModelActivitySumar.setOnClickListener{view ->
             val intent = Intent(this, ViewModelActivity::class.java)
@@ -26,6 +28,11 @@ class MainActivity : AppCompatActivity() {
 
         btViewModelActivityUser.setOnClickListener{view ->
             val intent = Intent(this, ViewModelUserActivity::class.java)
+            startActivity(intent)
+        }
+
+        btViewModelActivityLiveData.setOnClickListener{view ->
+            val intent = Intent(this, LiveDataActivity::class.java)
             startActivity(intent)
         }
     }

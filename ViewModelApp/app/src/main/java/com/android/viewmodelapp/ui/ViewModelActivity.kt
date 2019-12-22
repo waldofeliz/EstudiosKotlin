@@ -11,10 +11,10 @@ import com.android.viewmodelapp.viewmodel.SumarViewModel
 
 class ViewModelActivity : AppCompatActivity() {
 
-    lateinit var tvSumar : TextView
-    lateinit var tvSumarViewModel :TextView
-    lateinit var btSumar : Button
-    var numero: Int = 0
+    private lateinit var tvSumar : TextView
+    private lateinit var tvSumarViewModel :TextView
+    private lateinit var btSumar : Button
+    private var numero: Int = 0
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

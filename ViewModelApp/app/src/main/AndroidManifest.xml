@@ -9,9 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ui.LiveDataActivity"
+            android:screenOrientation="sensor"></activity>
         <activity
             android:name=".ui.ViewModelUserActivity"
-            android:screenOrientation="sensor"></activity>
+            android:screenOrientation="sensor" />
         <activity
             android:name=".ui.ViewModelActivity"
             android:screenOrientation="sensor" />

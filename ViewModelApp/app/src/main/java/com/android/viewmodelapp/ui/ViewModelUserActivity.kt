@@ -12,14 +12,14 @@ import com.android.viewmodelapp.viewmodel.UserViewModel
 
 class ViewModelUserActivity : AppCompatActivity() {
 
-    lateinit var etNombre :EditText
-    lateinit var etEdad :EditText
-    lateinit var btSalvar : Button
-    lateinit var btVerUser :Button
-    lateinit var tvUser : TextView
-    lateinit var tvUserViewModel : TextView
+    private lateinit var etNombre :EditText
+    private lateinit var etEdad :EditText
+    private lateinit var btSalvar : Button
+    private lateinit var btVerUser :Button
+    private lateinit var tvUser : TextView
+    private lateinit var tvUserViewModel : TextView
 
-    lateinit var userList : ArrayList<User>
+    private lateinit var userList : ArrayList<User>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
