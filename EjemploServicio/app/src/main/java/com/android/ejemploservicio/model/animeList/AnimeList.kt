@@ -1,3 +1,5 @@
+package com.android.ejemploservicio.model.animeList
+
 import com.google.gson.annotations.SerializedName
 
 /*

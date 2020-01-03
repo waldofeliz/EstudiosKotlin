@@ -5,4 +5,6 @@
     <string name="strTipo">Tipo</string>
     <string name="strEpisodios">Episodios</string>
     <string name="strScore">Score</string>
+    <string name="strTitle">Title</string>
+    <string name="strListaServicio">Lista Animes</string>
 </resources>

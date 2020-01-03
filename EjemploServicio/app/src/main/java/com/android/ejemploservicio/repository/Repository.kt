@@ -1,7 +1,6 @@
 package com.android.ejemploservicio.repository
 
 import AnimeDetail
-import AnimeList
 import android.util.Log
 import com.android.ejemploservicio.listener.AnimeDetailListener
 import com.android.ejemploservicio.remote.AllAnime

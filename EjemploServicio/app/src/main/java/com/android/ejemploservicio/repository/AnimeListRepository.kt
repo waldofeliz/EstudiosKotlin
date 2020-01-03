@@ -1,6 +1,6 @@
 package com.android.ejemploservicio.repository
 
-import AnimeList
+import com.android.ejemploservicio.model.animeList.AnimeList
 import android.util.Log
 import com.android.ejemploservicio.datasource.AnimeListDataSource
 import com.android.ejemploservicio.listener.AnimeListListener

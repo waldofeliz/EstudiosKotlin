@@ -9,6 +9,7 @@ import com.android.ejemploservicio.R
 class MainActivity : AppCompatActivity() {
 
     lateinit var btServicio : Button
+    lateinit var btLista : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,10 +17,16 @@ class MainActivity : AppCompatActivity() {
 
 
         btServicio = findViewById(R.id.buttonServicio)
+        btLista = findViewById(R.id.buttonLista)
 
         btServicio.setOnClickListener{
             var atServicio = Intent(this, ServicioActivity::class.java)
             startActivity(atServicio)
+        }
+
+        btLista.setOnClickListener{
+            var ltServicio = Intent(this, AnimeListActivity::class.java)
+            startActivity(ltServicio)
         }
     }
 }

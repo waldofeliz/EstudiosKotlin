@@ -1,7 +1,7 @@
 package com.android.ejemploservicio.remote
 
 import AnimeDetail
-import AnimeList
+import com.android.ejemploservicio.model.animeList.AnimeList
 import com.android.ejemploservicio.BuildConfig
 import retrofit2.Call
 import retrofit2.Retrofit
