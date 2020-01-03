@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">EjemploServicio</string>
+    <string name="strServicio">Servicio</string>
+    <string name="strTitulo">Titulo</string>
+    <string name="strTipo">Tipo</string>
+    <string name="strEpisodios">Episodios</string>
+    <string name="strScore">Score</string>
 </resources>
