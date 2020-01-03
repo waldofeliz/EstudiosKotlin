@@ -25,9 +25,11 @@ class ServicioActivity : AppCompatActivity() {
 
         try {
 
+            var animeId: Int = intent.extras?.get("animeId") as Int
+
             var animeViewModel = ViewModelProviders.of(this)[AnimeViewModel::class.java]
 
-            animeViewModel.loadAnime(5114)
+            animeViewModel.loadAnime(animeId)
 
 
             tituloTv = findViewById(R.id.tvTitulo)

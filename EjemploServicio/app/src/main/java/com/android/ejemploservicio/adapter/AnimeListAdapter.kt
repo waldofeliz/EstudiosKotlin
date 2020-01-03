@@ -2,6 +2,7 @@ package com.android.ejemploservicio.adapter
 
 
 import android.content.Context
+import android.content.Intent
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -12,6 +13,7 @@ import android.widget.TextView
 import com.android.ejemploservicio.R
 import com.bumptech.glide.Glide
 import com.android.ejemploservicio.model.animeList.Top
+import com.android.ejemploservicio.ui.ServicioActivity
 
 class AnimeListAdapter(val context : Context) : RecyclerView.Adapter<AnimeListAdapter.ViewHolder>() {
 
@@ -55,6 +57,12 @@ class AnimeListAdapter(val context : Context) : RecyclerView.Adapter<AnimeListAd
             animeScore.rating = anime.score?.toFloat() ?: 0.0f
             context.let {
                 Glide.with(context).load(anime.image_url).into(animeImage)
+            }
+
+            itemView.setOnClickListener{view ->
+                val servicioDetail = Intent(itemView.context, ServicioActivity::class.java)
+                servicioDetail.putExtra("animeId", anime.mal_id)
+                context.startActivity(servicioDetail)
             }
 
         }

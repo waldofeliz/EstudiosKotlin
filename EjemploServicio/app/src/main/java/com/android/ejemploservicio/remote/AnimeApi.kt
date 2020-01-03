@@ -18,7 +18,7 @@ interface AllAnimeApiService{
     @GET("anime/{id}")
     fun getAnimeDetail(@Path("id") id : Int) : Call<AnimeDetail?>
 
-    @GET("top/anime/1/upcoming")
+    @GET("top/anime")
     fun getAnimeList() : Call<AnimeList>
 }
 
