@@ -9,15 +9,15 @@
     </style>
 
     <style name="styleTitulo">
-        <item name="android:textSize">24dp</item>
-        <item name="android:padding">16dp</item>
-        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textAlignment"> viewStart</item>
         <item name="android:textStyle">bold</item>
     </style>
     <style name="styleDetalle">
-        <item name="android:textSize">20dp</item>
-        <item name="android:padding">16dp</item>
-        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textAlignment">viewStart</item>
     </style>
 
 </resources>
