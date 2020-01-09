@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".ui.ServicioActivity">
 
     <ImageView
@@ -12,70 +11,85 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/ic_launcher" />
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgAnime">
 
-        <LinearLayout
-            android:id="@+id/LyPrueba"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="83dp">
 
-            <TextView
-                android:id="@+id/tvTitle"
-                style="@style/styleTitulo"
+            <LinearLayout
+                android:id="@+id/LyPrueba"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/strTitulo" />
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tvTitulo"
-                style="@style/styleDetalle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tvTitle"
+                    style="@style/styleTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strTitulo" />
 
-            <TextView
-                android:id="@+id/tvType"
-                style="@style/styleTitulo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/strTipo" />
+                <TextView
+                    android:id="@+id/tvTitulo"
+                    style="@style/styleDetalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-            <TextView
-                android:id="@+id/tvTipo"
-                style="@style/styleDetalle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tvType"
+                    style="@style/styleTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strTipo" />
 
-            <TextView
-                android:id="@+id/tvEpisodes"
-                style="@style/styleTitulo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/strEpisodios" />
+                <TextView
+                    android:id="@+id/tvTipo"
+                    style="@style/styleDetalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-            <TextView
-                android:id="@+id/tvEpisodios"
-                style="@style/styleDetalle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tvEpisodes"
+                    style="@style/styleTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strEpisodios" />
 
-            <TextView
-                android:id="@+id/tvScores"
-                style="@style/styleTitulo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/strScore" />
+                <TextView
+                    android:id="@+id/tvEpisodios"
+                    style="@style/styleDetalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-            <RatingBar
-                android:id="@+id/rbScore"
-                style="@style/styleDetalle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-    </ScrollView>
+                <TextView
+                    android:id="@+id/tvScores"
+                    style="@style/styleTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strScore" />
 
-</LinearLayout>
+                <RatingBar
+                    android:id="@+id/rbScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:clickable="false"
+                    android:longClickable="false" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

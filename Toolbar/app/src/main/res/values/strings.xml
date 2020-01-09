@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Toolbar</string>
+
+    <string name="aboutTooBsr">About Toolbar</string>
+    <string name="aboutCollapsingToolBsr">About Collapsing Toolbar Layout</string>
+    <string name="g">Toolbar was introduce in Material Design in API 21 (Android 5.0 i.e Lollipop). Material Design brings lot of new features in Android that changed a lot the visual design patterns regarding the designing of modern Android applications.\n An action bar is traditionally a part of an Activity opaque window decontrolled by the framework but a Toolbar may be placed at any level of resting within a view hierarchy.</string>
+
+</resources>
